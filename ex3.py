@@ -1,5 +1,6 @@
 from graph import *
 
+#Large circle
 penColor('black')
 brushColor('yellow')
 circle(200, 200, 100)
