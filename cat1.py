@@ -7,7 +7,7 @@ mask_ratio = 3/7
 def paint_cat():
     masks(mask_ratio)
     window(width*0.6, 10, width - 10, height*mask_ratio - 10, 10)
-    cat(20, 300, 1.5)
+    cat(20, 300, 1)
 
 
 def masks(ratio):
@@ -89,6 +89,6 @@ def cat(x1, y1, scale):
     a4, b4 = x1 + scale * 30, y1 + scale * 45
     line(a4 + scale * 5, b4, a4 + scale * -5, b4)
 
-
-paint_cat()
-run()
+if __name__ == "__main__":
+    paint_cat()
+    run()
